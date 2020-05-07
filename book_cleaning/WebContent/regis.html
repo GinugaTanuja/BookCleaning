@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration</title>
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<header>
+<!--<img src="http://marathigranthalay.net/Images/banner.JPG" width=1200 height=200 >-->
+<div class="topnav1">
+  <a class="active1" href="home.html">Home</a>
+  <a href="log.html">Login</a>
+  <input type="text" placeholder="Search.."><br>
+</div>
+</header>
+
+<form action="reg.jsp"method="post">
+User name: <input type="text" name="user"/><br/><br/>
+Set password: <input type="password" name="pwd" /><br/><br/>
+Register me as a ?
+<br><br>
+  <input type="radio" name="role" value="Admin"> Admin<br>
+  <input type="radio" name="role" value="Librarian"> Librarian<br>
+
+<button type="submit">Register me</button>
+
+</form>
+</body>
+</html>
